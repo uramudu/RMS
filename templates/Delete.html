@@ -1,0 +1,24 @@
+
+    <table>
+        <tr>
+            <td>Idno</td>
+            <td>{{ object.idno }}</td>
+        </tr>
+        <tr>
+            <td>Name</td>
+            <td>{{ object.name }}</td>
+        </tr>
+        <tr>
+            <td>Salary</td>
+            <td>{{ object.salary }}</td>
+        </tr>
+       <tr>
+        <th>
+            <form method="post">
+                 {% csrf_token %}
+                <button type="submit">Yes</button>
+            </form> </th>
+        <th><form action="/home/" >
+            <button type="submit">No</button></form> </th>
+    </tr>
+    </table>
